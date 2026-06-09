@@ -1,7 +1,9 @@
 import { useState } from 'react';
 import { SudokuGrid, SolveResult, ComparisonResult, Algorithm, Difficulty } from '../types';
 
-const API_URL = 'http://localhost:5000/api';
+// In production the Flask backend is served from the same origin under `/api`
+// (see root vercel.json). Override locally via VITE_API_URL if needed.
+const API_URL = import.meta.env.VITE_API_URL ?? '/api';
 
 export function useSudokuSolver() {
   const [loading, setLoading] = useState(false);

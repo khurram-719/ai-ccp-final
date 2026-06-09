@@ -1,4 +1,3 @@
-import React from 'react';
 import { Algorithm } from '../types';
 
 interface AlgorithmSelectorProps {

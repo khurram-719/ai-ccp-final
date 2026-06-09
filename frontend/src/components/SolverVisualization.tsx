@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { Play, Pause, RotateCcw } from 'lucide-react';
 import { SolveResult } from '../types';
 import { PuzzleGrid } from './PuzzleGrid';

@@ -1,5 +1,3 @@
-import React from 'react';
-
 interface PuzzleGridProps {
   puzzle: number[][];
   solution?: number[][];
@@ -14,7 +12,6 @@ export function PuzzleGrid({
   solution,
   currentState,
   onCellChange,
-  showSolution = false,
   isEditable = false
 }: PuzzleGridProps) {
   const displayGrid = currentState || solution || puzzle;

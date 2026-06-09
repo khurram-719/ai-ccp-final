@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Zap, BarChart3, Brain, Sparkles } from 'lucide-react';
 import { useSudokuSolver } from './hooks/useSudokuSolver';
 import { PuzzleGrid } from './components/PuzzleGrid';
